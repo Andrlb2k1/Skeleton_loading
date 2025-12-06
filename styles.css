@@ -112,25 +112,51 @@ h1 {
 }
 
 .skeleton {
+    background: #2a3555;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
 
+.skeleton::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.08) 50%, transparent 100%);
+    animation: shimmer 1.25s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
 }
 
 .skeleton-card {
-
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
 
 .skeleton-content {
-
+    flex: 1;
 }
 
 .skeleton-title {
-
+    height: 20px;
+    width: 60%;
+    margin-bottom: 12px;
 }
 
 .skeleton-text {
-
+    height: 14px;
+    width: 100%;
+    margin-bottom: 8px;
 }
 
-.short {
-    
+.skeleton-text.short {
+    width: 70%;
 }

@@ -39,7 +39,7 @@ function createSkeleton() {
     return `
         <div class="card">
             <div class="skeleton skeleton-card"></div>
-            <div class="skeleton-content>
+            <div class="skeleton-content">
                 <div class="skeleton skeleton-title"></div>
                 <div class="skeleton skeleton-text"></div>
                 <div class="skeleton skeleton-text short"></div>
